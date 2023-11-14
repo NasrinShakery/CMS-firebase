@@ -13,6 +13,8 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ReportIcon from "@mui/icons-material/Report";
 
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
    return (
       <div className="sidebar">
@@ -20,10 +22,12 @@ const Sidebar = () => {
             <div className="sidebarMenu">
                <h3 className="sidebarTitle">Dashboard</h3>
                <ul className="sidebarList">
-                  <li className="sidebarListItem active">
-                     <LineStyleIcon  className="sidebarIcon" />
-                     <span className="sidebarItemText">Home</span>
-                  </li>
+                  <Link to={"/"} className="link">
+                     <li className="sidebarListItem active">
+                        <LineStyleIcon className="sidebarIcon" />
+                        <span className="sidebarItemText">Home</span>
+                     </li>
+                  </Link>
                   <li className="sidebarListItem">
                      <TimelineIcon className="sidebarIcon" />
                      <span className="sidebarItemText">Analytics</span>
@@ -38,25 +42,31 @@ const Sidebar = () => {
             <div className="sidebarMenu">
                <h3 className="sidebarTitle">Quick Menu</h3>
                <ul className="sidebarList">
-                  <li className="sidebarListItem ">
-                     <PermIdentityIcon className="sidebarIcon" />
-                     <span className="sidebarItemText">Users</span>
-                  </li>
-                  <li className="sidebarListItem ">
-                     <PermIdentityIcon className="sidebarIcon" />
-                     <span className="sidebarItemText">New User</span>
-                  </li>
-                  <li className="sidebarListItem">
-                     <StorefrontIcon className="sidebarIcon" />
-                     <span className="sidebarItemText">Products</span>
-                  </li>
+                  <Link to={"/"} className="link">
+                     <li className="sidebarListItem ">
+                        <PermIdentityIcon className="sidebarIcon" />
+                        <span className="sidebarItemText">Users</span>
+                     </li>
+                  </Link>
+                  <Link to={"/"} className="link">
+                     <li className="sidebarListItem ">
+                        <PermIdentityIcon className="sidebarIcon" />
+                        <span className="sidebarItemText">New User</span>
+                     </li>
+                  </Link>
+                  <Link to={"/"} className="link">
+                     <li className="sidebarListItem">
+                        <StorefrontIcon className="sidebarIcon" />
+                        <span className="sidebarItemText">Products</span>
+                     </li>
+                  </Link>
                   <li className="sidebarListItem">
                      <AttachMoneyIcon className="sidebarIcon" />
                      <span className="sidebarItemText">Transaction</span>
                   </li>
                   <li className="sidebarListItem">
                      <BarChartIcon className="sidebarIcon" />
-                     <span className="sidebarItemText">Transaction</span>
+                     <span className="sidebarItemText">Reports</span>
                   </li>
                </ul>
             </div>

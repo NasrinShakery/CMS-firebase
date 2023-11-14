@@ -2,7 +2,7 @@
    flex: 1;
    height: calc(100vh - 4rem);
    background-color: rgb(251, 241, 229);
-   position: fixed;
+   position: sticky;
    top: 4rem;
 }
 .sidebarWrapper{
