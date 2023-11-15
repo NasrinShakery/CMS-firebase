@@ -1,0 +1,43 @@
+.features{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.featureItem{
+   flex: 1;
+   margin: 0 1.2rem;
+   padding: 2rem;
+   /* border: 1px solid #ccc; */
+   border-radius: .6rem;
+   cursor: pointer;
+   box-shadow: 0 0 .8rem  rgba(0, 0, 0, .75);
+}
+.featureTitle {
+   font-size: 1.2rem;
+}
+.featurePriceContainer{
+   display: flex;
+   align-items: center;
+   margin: .8rem 0;
+}
+.featureMoney{
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+.featureRate{
+   display: flex;
+   align-items: center;
+   margin-left: 1.5rem;
+}
+.featureIcon{
+   font-size: 2.5rem;
+   margin-left: .3rem;
+   color: green;
+}
+.featureIcon.negative{
+   color: red;
+}
+.featureSub{
+   font-size: 1rem;
+   color: gray;
+}
