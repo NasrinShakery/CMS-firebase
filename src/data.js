@@ -74,4 +74,31 @@ const newMembers = [
    },
 ]
 
-export {xAxisDate, newMembers }
+let transactions = [
+   {
+      id:1,
+      customer: 'vida',
+      date : " 20 Feb 2021",
+      amount: 99.98,
+      status: "declined",
+      img: "images/nansi2.JPEG"
+   },
+   {
+      id:2,
+      customer: 'tala',
+      date : " 9 Jun 2021",
+      amount: 99.98,
+      status: "aproved",
+      img: "images/nansi2.JPEG"
+   },
+   {
+      id:3,
+      customer: 'roz',
+      date : " 3 Jan 2022",
+      amount: 99.98,
+      status: "pending",
+      img: "images/nansi2.JPEG"
+   },
+]
+
+export {xAxisDate, newMembers, transactions }

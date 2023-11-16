@@ -16,7 +16,7 @@ export default function Chart({title, dataKey, grid}) {
       <div className="chart">
          {console.log(xAxisDate)}
           <h3 className='chartTitle'>{title}</h3>
-          <ResponsiveContainer width="100%" aspect={5}>
+          <ResponsiveContainer width="90%" aspect={5}>
               <LineChart data={xAxisDate}>
                   <XAxis dataKey="name" stroke='#ccc' />
                   <YAxis dataKey="Sale" />
