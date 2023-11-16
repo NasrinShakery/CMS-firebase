@@ -46,4 +46,32 @@ let xAxisDate = [
       "Sale" : 122_000
    },
 ]
-export {xAxisDate}
+
+const newMembers = [
+   {
+      id:1,
+      username:'Narta',
+      title: 'Developper',
+      img: 'images/nansi2.JEPG'
+   },
+   {
+      id:2,
+      username:'Nika',
+      title: 'Datebase',
+      img: 'images/nansi2.JEPG'
+   },
+   {
+      id:1,
+      username:'Dorsa',
+      title: 'Designer',
+      img: 'images/nansi2.JEPG'
+   },
+   {
+      id:1,
+      username:'Hana',
+      title: 'Content',
+      img: 'images/nansi2.JEPG'
+   },
+]
+
+export {xAxisDate, newMembers }
