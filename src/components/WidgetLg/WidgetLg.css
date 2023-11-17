@@ -23,11 +23,6 @@
    align-items: center;
 }
 .widgetLgImg{
-   width: 2.5rem;
-   height: 2.5rem;
-   border-radius: 50%;
-   object-fit: cover;
-   object-position: top;
    margin: .8rem;
 }
 .widgetLgName{

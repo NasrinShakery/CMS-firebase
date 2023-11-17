@@ -22,11 +22,7 @@
    margin: 1.2rem 0;
 }
 .widgerSmImg{
-   width: 2.5rem;
-   height: 2.5rem;
-   border-radius: 50%;
-   object-fit: cover;
-   object-position: top;
+   
 }
 .widggetSmUser{
    display: flex;

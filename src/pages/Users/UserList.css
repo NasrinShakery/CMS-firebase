@@ -1,0 +1,24 @@
+.userList{
+   flex: 4;
+}
+.userListUser{
+   display: flex;
+   align-items: center;
+}
+.userListUserName{
+   margin-left: .5rem;
+}
+.userListEditButton{
+   border: none;
+   border-radius: .8rem;
+   padding: .3rem .5rem;
+   color:#fff;
+   background-color: #3bb077;
+   cursor: pointer;
+}
+.userListDeleteIcon{
+   border: none;
+   background-color: transparent;
+   color:red;
+   cursor: pointer;
+}
