@@ -54,7 +54,7 @@ const Sidebar = () => {
                         <span className="sidebarItemText">New User</span>
                      </li>
                   </Link>
-                  <Link to={"/"} className="link">
+                  <Link to={"/products"} className="link">
                      <li className="sidebarListItem">
                         <StorefrontIcon className="sidebarIcon" />
                         <span className="sidebarItemText">Products</span>

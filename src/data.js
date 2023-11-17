@@ -160,4 +160,43 @@ let userRows =[
    },
 ]
 
-export {xAxisDate, newMembers, transactions, userRows }
+let products = [
+   {
+      id: 1,
+      title: "Mobile",
+      avatar : "images/product/mobile.jpg",
+      price: 890
+   },
+   {
+      id: 2,
+      title: "Camera",
+      avatar : "images/product/camera.jpg",
+      price: 890
+   },
+   {
+      id: 3,
+      title: "watch",
+      avatar : "images/product/watch.jpg",
+      price: 890
+   },
+   {
+      id: 4,
+      title: "tablet",
+      avatar : "images/product/tablet.jpg",
+      price: 890
+   },
+   {
+      id: 5,
+      title: "laptop",
+      avatar : "images/product/laptop.jpg",
+      price: 890
+   },
+   {
+      id: 6,
+      title: "headphone",
+      avatar : "images/product/headphone.jpg",
+      price: 890
+   },
+]
+
+export {xAxisDate, newMembers, transactions, userRows, products }

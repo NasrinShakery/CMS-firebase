@@ -76,11 +76,11 @@ const UserList = () => {
                   <Link to={`/user/${params.row.id}`} className="link">
                      <button className="userListEditButton">Edit</button>
                   </Link>
-                  <button className="userListDeleteIcon" onClick={() => userDelete(params.row.id)}>
-                     <DeleteOutlineIcon
-                        
-                        
-                     />
+                  <button
+                     className="userListDeleteIcon"
+                     onClick={() => userDelete(params.row.id)}
+                  >
+                     <DeleteOutlineIcon />
                   </button>
                </>
             );

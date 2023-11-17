@@ -1,0 +1,24 @@
+.products{
+   flex: 4;
+}
+.Product{
+   display: flex;
+   align-items: center;
+}
+.ProductName{
+   margin-left: .5rem;
+}
+.productsEditButton{
+   border: none;
+   border-radius: .8rem;
+   padding: .3rem .5rem;
+   color:#fff;
+   background-color: #3bb077;
+   cursor: pointer;
+}
+.productsDeleteIcon{
+   border: none;
+   background-color: transparent;
+   color:red;
+   cursor: pointer;
+}
