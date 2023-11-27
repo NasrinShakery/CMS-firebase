@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { products } from "../../data";
-import "./Products.css";
+import { userRows } from "../../data";
+import "./UserList.css";
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 import { Link } from "react-router-dom";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import { Button } from "@mui/material";
 
-const Products = () => {
-  const [productsDatas, setProductsDatas] = useState(products);
+const UserList = () => {
+   const [userDatas, setUserDatas] = useState(userRows);
 
-   const userDelete = (productID) => {
-      console.log(productID);
-      setProductsDatas(productsDatas.filter((product) => product.id != productID));
+   const userDelete = (userID) => {
+      console.log(userID);
+      setUserDatas(userDatas.filter((user) => user.id != userID));
    };
 
    const columns = [
@@ -22,8 +22,8 @@ const Products = () => {
          width: 90,
       },
       {
-         field: "title",
-         headerName: "Name",
+         field: "user",
+         headerName: "User",
          width: 200,
          // rendeCell: (params) => {
          //    console.log(params);
@@ -39,11 +39,11 @@ const Products = () => {
             console.log(params);
             return (
                <>
-                  <Link to={`/product/${params.row.id}`} className="link">
-                     <div className="Product">
+                  <Link to="/" className="link">
+                     <div className="userListUser">
                         <img src={params.row.avatar} className="avatarImg" />
-                        <span className="ProductName">
-                           {params.row.title || ""}
+                        <span className="userListUserName">
+                           {params.row.username || ""}
                         </span>
                      </div>
                   </Link>
@@ -52,9 +52,19 @@ const Products = () => {
          },
       },
       {
-         field: "price",
-         headerName: "Price",
+         field: "email",
+         headerName: "Email",
          width: 200,
+      },
+      {
+         field: "status",
+         headerName: "Status",
+         width: 120,
+      },
+      {
+         field: "transaction",
+         headerName: "Transaction",
+         width: 160,
       },
       {
          field: "action",
@@ -63,11 +73,11 @@ const Products = () => {
          renderCell: (params) => {
             return (
                <>
-                  <Link to={`/product/${params.row.id}`} className="link">
-                     <button className="productsEditButton">Edit</button>
+                  <Link to={`/user/${params.row.id}`} className="link">
+                     <button className="userListEditButton">Edit</button>
                   </Link>
                   <button
-                     className="productsDeleteIcon"
+                     className="userListDeleteIcon"
                      onClick={() => userDelete(params.row.id)}
                   >
                      <DeleteOutlineIcon />
@@ -79,10 +89,10 @@ const Products = () => {
    ];
 
    return (
-      <div className="products">
+      <div className="userList">
          <Box sx={{ height: 400, width: "100%" }}>
             <DataGrid
-               rows={productsDatas}
+               rows={userDatas}
                columns={columns}
                // pageSize={4}
                initialState={{
@@ -99,6 +109,6 @@ const Products = () => {
          </Box>
       </div>
    );
-}
+};
 
-export default Products
+export default UserList;

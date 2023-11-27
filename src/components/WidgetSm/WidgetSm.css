@@ -1,0 +1,50 @@
+.widgetSm{  
+   flex: 1;
+   padding: 1.2rem;
+   margin-right: 1.2rem;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+   border-radius: 1rem;
+
+}
+.widgetSmTitle{
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+.widgetSmList{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.widgetSmListItem{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 1.2rem 0;
+}
+.widgerSmImg{
+   
+}
+.widggetSmUser{
+   display: flex;
+   flex-direction: column;
+}
+.widgetSmUserName{
+   font-weight: 600;
+}
+.widgetSmUserTitle{
+   font-weight: 300;
+}
+.widgetSmButton{
+   display: flex;
+   align-items: center;
+   border-radius: .5rem;
+   padding: .2rem .6rem;
+   border: none;
+   background-color:#eddada ;
+   color: #555;
+   cursor: pointer;
+}
+.widgetSmIcon{
+   font-size: 1rem;
+}
+
