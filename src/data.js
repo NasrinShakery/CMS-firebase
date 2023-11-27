@@ -1,4 +1,4 @@
-let xAxisDate = [
+let xAxisData = [
    {
       "name" : 'Jan',
       "Sale" : 54_000
@@ -199,4 +199,19 @@ let products = [
    },
 ]
 
-export {xAxisDate, newMembers, transactions, userRows, products }
+const productsData = [
+   {
+       name: 'Jan',
+       sales: 4000,
+   },
+   {
+       name: 'Feb',
+       sales: 3000,
+   },
+   {
+       name: 'Mar',
+       sales: 5000,
+   },
+]
+
+export {xAxisData, newMembers, transactions, userRows, products, productsData }

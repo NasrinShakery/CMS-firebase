@@ -8,19 +8,18 @@ import {
     CartesianGrid,
     Tooltip
 } from 'recharts'
-import  {xAxisDate} from "../../data"
 import "./Chart.css"
 
-export default function Chart({title, dataKey, grid}) {
+export default function Chart({title, data,dataKey, grid}) {
   return (
       <div className="chart">
-         {console.log(xAxisDate)}
+         {/* {console.log(data)} */}
           <h3 className='chartTitle'>{title}</h3>
           <ResponsiveContainer width="90%" aspect={5}>
-              <LineChart data={xAxisDate}>
+              <LineChart data={data}>
                   <XAxis dataKey="name" stroke='#ccc' />
-                  <YAxis dataKey="Sale" />
-                  <Line type="monotone" dataKey={"Sale"} stroke='#9a8802' />
+                  {/* <YAxis dataKey="Sale" /> */}
+                  <Line type="monotone" dataKey={dataKey} stroke='#9a8802' />
                   <Tooltip />
                   {grid && <CartesianGrid stroke='#eddada' strokeDasharray="6" />}
               </LineChart>
